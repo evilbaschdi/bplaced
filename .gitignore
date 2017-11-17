@@ -184,3 +184,4 @@ FakesAssemblies/
 /wp-config.php
 /filemanager
 Thumbs.db
+.vs/
