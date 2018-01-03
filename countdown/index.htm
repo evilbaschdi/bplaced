@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta http-equiv=content-type content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="private, no-transform" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimal-ui" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#212121">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#212121">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#212121">
+
+    <link rel="icon" href="http://evilbaschdi.bplaced.net/img/cropped-baschdi_bw-1-32x32.png" sizes="32x32" />
+    <link rel="icon" href="http://evilbaschdi.bplaced.net/img/cropped-baschdi_bw-1-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="http://evilbaschdi.bplaced.net/img/cropped-baschdi_bw-1-180x180.png">
+    <meta name="msapplication-TileImage" content="http://evilbaschdi.bplaced.net/img/cropped-baschdi_bw-1-270x270.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../font/font.css" rel="stylesheet" />
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+    <script language="JavaScript">
+        // Ziel-Datum in MEZ
+        var jahr = 2018, monat = 1, tag = 1, stunde = 0, minute = 0, sekunde = 0;
+        var zielDatum = new Date(jahr, monat - 1, tag, stunde, minute, sekunde);
+        function countdown() {
+            startDatum = new Date(); // Aktuelles Datum
+            // Countdown berechnen und anzeigen, bis Ziel-Datum erreicht ist
+            if (startDatum < zielDatum) {
+                var jahre = 0, monate = 0, tage = 0, stunden = 0, minuten = 0, sekunden = 0;
+                // Jahre
+                while (startDatum < zielDatum) {
+                    jahre++;
+                    startDatum.setFullYear(startDatum.getFullYear() + 1);
+                }
+                startDatum.setFullYear(startDatum.getFullYear() - 1);
+                jahre--;
+                // Monate
+                while (startDatum < zielDatum) {
+                    monate++;
+                    startDatum.setMonth(startDatum.getMonth() + 1);
+                }
+                startDatum.setMonth(startDatum.getMonth() - 1);
+                monate--;
+                // Tage
+                while (startDatum.getTime() + (24 * 60 * 60 * 1000) < zielDatum) {
+                    tage++;
+                    startDatum.setTime(startDatum.getTime() + (24 * 60 * 60 * 1000));
+                }
+                // Stunden
+                stunden = Math.floor((zielDatum - startDatum) / (60 * 60 * 1000));
+                startDatum.setTime(startDatum.getTime() + stunden * 60 * 60 * 1000);
+                // Minuten
+                minuten = Math.floor((zielDatum - startDatum) / (60 * 1000));
+                startDatum.setTime(startDatum.getTime() + minuten * 60 * 1000);
+                // Sekunden
+                sekunden = Math.floor((zielDatum - startDatum) / 1000);
+                // Anzeige formatieren
+                (jahre != 1) ? jahre = jahre + " Jahre,  " : jahre = jahre + " Jahr,  ";
+                (monate != 1) ? monate = monate + " Monate,  " : monate = monate + " Monat,  ";
+                (tage != 1) ? tage = tage + " Tage,  " : tage = tage + " Tag,  ";
+                (stunden != 1) ? stunden = stunden + " Stunden,  " : stunden = stunden + " Stunde,  ";
+                (minuten != 1) ? minuten = minuten + " Minuten  und  " : minuten = minuten + " Minute  und  ";
+                if (sekunden < 10) sekunden = "0" + sekunden;
+                (sekunden != 1) ? sekunden = sekunden + " Sekunden" : sekunden = sekunden + " Sekunde";
+                document.getElementById("countdown").innerHTML =
+                    jahre + monate + tage + stunden + minuten + sekunden;
+                setTimeout('countdown()', 200);
+            }
+            else document.getElementById("countdown").innerHTML =
+                "Frohes neues Jahr! Viel Glück und Gesundheit!";
+        }
+    </script>
+</head>
+
+<body onload="countdown()">
+    <div class="grey-text text-lighten-2">
+        <nav class="grey black" role="navigation">
+            <div class="nav-wrapper container">
+            </div>
+        </nav>
+    </div>
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br>
+                <br>
+                <h1 class="center grey-text text-lighten-2">Countdown Jahr 2018</h1>
+
+                <div class="row center">
+                    <h5 class="col s12 light" id="countdown">Countdown</h5>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="parallax black">
+            <img src="../img/spectre_key_blue.jpg" alt="">
+        </div>
+    </div>
+
+    <footer class="page-footer black darken-4">
+        <div class="container hiddendiv"></div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div>
+                    <div>
+                        <h6 class="grey-text text-lighten-2">
+                            &copy; 2010 -
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> by evil.baschdi
+                        </h6>
+                    </div>
+                    <!--<div class="addthis_inline_share_toolbox"></div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+    <script src="../js/init.js"></script>
+</body>
+</body>
+
+</html>
