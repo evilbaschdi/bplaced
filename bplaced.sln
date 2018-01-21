@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "bplaced", "http://localhost:50101", "{D3B9B419-E51D-40C3-8817-204C4A5037E9}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.1"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50101"
 		Debug.AspNetCompiler.PhysicalPath = "..\bplaced\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50101\"
@@ -34,5 +34,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1BC5DD8-9CF0-4ACA-AD2D-283E506FE3C4}
 	EndGlobalSection
 EndGlobal

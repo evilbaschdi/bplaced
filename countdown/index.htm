@@ -1,8 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns#">
 
 <head>
-    <meta http-equiv=content-type content="text/html; charset=utf-8" />
+    <title>evil.baschdi Countdown</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="private, no-transform" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimal-ui" />
@@ -23,12 +24,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../font/font.css" rel="stylesheet" />
     <link href="../css/style.css" type="text/css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+    <script src="../js/init.js"></script>
     <script language="JavaScript">
         // Ziel-Datum in MEZ
         var jahr = 2018, monat = 1, tag = 1, stunde = 0, minute = 0, sekunde = 0;
         var zielDatum = new Date(jahr, monat - 1, tag, stunde, minute, sekunde);
+
         function countdown() {
-            startDatum = new Date(); // Aktuelles Datum
+            var startDatum = new Date(); // Aktuelles Datum
             // Countdown berechnen und anzeigen, bis Ziel-Datum erreicht ist
             if (startDatum < zielDatum) {
                 var jahre = 0, monate = 0, tage = 0, stunden = 0, minuten = 0, sekunden = 0;
@@ -60,19 +65,23 @@
                 // Sekunden
                 sekunden = Math.floor((zielDatum - startDatum) / 1000);
                 // Anzeige formatieren
-                (jahre != 1) ? jahre = jahre + " Jahre,  " : jahre = jahre + " Jahr,  ";
-                (monate != 1) ? monate = monate + " Monate,  " : monate = monate + " Monat,  ";
-                (tage != 1) ? tage = tage + " Tage,  " : tage = tage + " Tag,  ";
-                (stunden != 1) ? stunden = stunden + " Stunden,  " : stunden = stunden + " Stunde,  ";
-                (minuten != 1) ? minuten = minuten + " Minuten  und  " : minuten = minuten + " Minute  und  ";
-                if (sekunden < 10) sekunden = "0" + sekunden;
-                (sekunden != 1) ? sekunden = sekunden + " Sekunden" : sekunden = sekunden + " Sekunde";
+                (jahre !== 1) ? jahre = jahre + " Jahre,  " : jahre = jahre + " Jahr,  ";
+                (monate !== 1) ? monate = monate + " Monate,  " : monate = monate + " Monat,  ";
+                (tage !== 1) ? tage = tage + " Tage,  " : tage = tage + " Tag,  ";
+                (stunden !== 1) ? stunden = stunden + " Stunden,  " : stunden = stunden + " Stunde,  ";
+                (minuten !== 1) ? minuten = minuten + " Minuten  und  " : minuten = minuten + " Minute  und  ";
+                if (sekunden < 10) {
+                    sekunden = "0" + sekunden;
+                }
+                (sekunden !== 1) ? sekunden = sekunden + " Sekunden" : sekunden = sekunden + " Sekunde";
                 document.getElementById("countdown").innerHTML =
                     jahre + monate + tage + stunden + minuten + sekunden;
                 setTimeout('countdown()', 200);
             }
-            else document.getElementById("countdown").innerHTML =
-                "Frohes neues Jahr! Viel Glück und Gesundheit!";
+            else {
+                document.getElementById("countdown").innerHTML =
+                    "Frohes neues Jahr! Viel Glück und Gesundheit!";
+            }
         }
     </script>
 </head>
@@ -123,10 +132,7 @@
     </footer>
 
     <!-- Scripts-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
-    <script src="../js/init.js"></script>
-</body>
+
 </body>
 
 </html>

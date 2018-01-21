@@ -1,4 +1,10 @@
-﻿var text = ['//sebastian walter', 'evil.baschdi'];
+(function($) {
+
+    //$(".button-collapse").sideNav();
+    // ReSharper disable once PossiblyUnassignedProperty
+    $('.parallax').parallax();
+})(jQuery); // end of jQuery name space
+var text = ['//sebastian walter', 'evil.baschdi'];
 var counter = 0;
 var changeHeadline = document.getElementById('changeHeadline');
 var changeTitle = document.getElementById('changeTitle');
