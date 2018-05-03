@@ -1,11 +1,5 @@
 [
   {
-    "outputFileName": "packages/init.min.js",
-    "inputFiles": [
-      "packages/init.js"
-    ]
-  },
-  {
     "outputFileName": "js/bundle.js",
     "inputFiles": [
       "js/init.js",
