@@ -1,104 +1,285 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="font/font.css" rel="stylesheet" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>evil.baschdi</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="font/font.css" rel="stylesheet" />
 
-
-    <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-        }
-  
-        @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
-        }
-      </style>
-      <!-- Custom styles for this template -->
-      <link href="css\sticky-footer-navbar.css" rel="stylesheet">
-  </head>
-  <body>
-        <header>
-                <!-- Fixed navbar -->
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                  <a class="navbar-brand" href="#">evil.baschdi</a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                            <a href="https://evilbaschdi.github.io/" class="nav-link">
-                            GitHub
-                            <i class="genericon genericon-github"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://twitter.com/evilbaschdi"
-                            class="nav-link">
-Twitter
-                            <i class="genericon genericon-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://de.linkedin.com/pub/sebastian-walter/ba/351/987"
-                            class="nav-link">
-LinkedIn
-                            <i class="genericon genericon-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.xing.com/profile/Sebastian_Walter26"
-                            class="nav-link">
-Xing
-                            <i class="jv-xing"></i>
-                        </a>
-                    </li>
-                    
-
-                      <!--<li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                      </li>-->
-                    </ul>                   
-                  </div>
-                </nav>
-              </header>
+  <title>evil.baschdi</title>
 
 
-    <h1>Sie sind hier falsch ...noch</h1>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="css\sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top x-bg-dark">
+      <a class="navbar-brand" href="#">evil.baschdi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">            
+                <a href="javascript:myFunction();" class="nav-link">
+                  Disclaimer
+                  <i class="genericon genericon-summary"></i>
+                </a>
+              </li>
+          <li class="nav-item">
+            <a href="https://evilbaschdi.github.io/" class="nav-link">
+              GitHub
+              <i class="genericon genericon-github"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/evilbaschdi" class="nav-link">
+              Twitter
+              <i class="genericon genericon-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://de.linkedin.com/pub/sebastian-walter/ba/351/987" class="nav-link">
+              LinkedIn
+              <i class="genericon genericon-linkedin"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.xing.com/profile/Sebastian_Walter26" class="nav-link">
+              Xing
+              <i class="jv-xing"></i>
+            </a>
+          </li>
+        
+        </ul>     
+      </div>
+    </nav>
+  </header>
 
 
-    <footer class="footer mt-auto py-3">
-        <div class="container">
-          <span class="text-muted"> &copy; 2010 -
-            <script>document.write(new Date().getFullYear())</script> by evil.baschdi</span>
-        </div>
-      </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+
+  <!-- Full Page Intro -->
+  <div class="view"
+    style="background-image: url('img/spectre_key_blue.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+      <!-- Content -->
+      <div class="text-center white-text mx-5 wow fadeIn">
+        <h1 class="mb-4">
+          <strong>Herzlich willkommen auf meiner Homepage</strong>
+        </h1>
+
+        <p class="mb-4 d-none d-md-block">
+          <strong>Beruflich betätige ich mich seit vielen Jahren als Software Developer für MS Dynamics.
+            <br />In meiner Freizeit höre und mache ich gerne Musik, Programmiere aber auch.</strong>
+        </p>
+
+        
+      </div>
+      <!-- Content -->
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+  </div>
+  <!-- Full Page Intro -->
+
+  <div class="container" id="disclaimer" style="display: none;">
+    <!-- Example row of columns -->
+    <div>
+      <h1>
+          <a href="javascript:myFunction();">
+              Disclaimer
+              <i class="genericon genericon-summary"></i>
+            </a>
+      </h1>
+    </div>
+    <div class="row">
+
+      <div class="col-md-4">
+        <h2>Haftung für Inhalte</h2>
+
+        <p>
+          Die Inhalte meiner Seiten wurden mit größter Sorgfalt erstellt. Für die
+          Richtigkeit, Vollständigkeit
+          und Aktualität der Inhaltekann ich jedoch keine Gewähr übernehmen. Als Diensteanbieter bin
+          ich
+          gemäß § 7 Abs.1 TMG füreigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
+          verantwortlich.
+          Nach §§ 8 bis10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte
+          oder
+          gespeichertefremde Informationen zu überwachen oder nach Umständen zu forschen, die auf
+          eine
+          rechtswidrigeTätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung
+          von
+          Informationennach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche
+          Haftung
+          ist jedocherst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei
+          Bekanntwerdenvon
+          entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>Haftung für Links</h2>
+        <p>
+          Mein Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte
+          ich keinen Einfluss habe.
+          Deshalb kann ich fürdiese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
+          verlinkten
+          Seiten iststets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die
+          verlinkten
+          Seitenwurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
+          Rechtswidrige
+          Inhaltewaren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche
+          Kontrolle
+          derverlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht
+          zumutbar.Bei
+          Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>Urheberrecht</h2>
+
+        <p>
+          Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
+          unterliegen dem deutschen
+          Urheberrecht. DieVervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung
+          außerhalb
+          der Grenzendes Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors
+          bzw.
+          Erstellers.Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen
+          Gebrauch
+          gestattet.Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden
+          die
+          UrheberrechteDritter beachtet. Insbesondere werden Inhalte Dritter als solche
+          gekennzeichnet.
+          Sollten Sietrotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen
+          entsprechendenHinweis.
+          Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>Datenschutz</h2>
+
+        <p>
+          Der Betreiber dieser Seiten nimmt den Schutz Ihrer persönlichen Daten sehr
+          ernst. Ich behandele Ihre
+          personenbezogenen Datenvertraulich und entsprechend der gesetzlichen
+          Datenschutzvorschriften
+          sowie dieser Datenschutzerklärung.Die Nutzung meiner Website ist in der Regel ohne Angabe
+          personenbezogener
+          Daten möglich. Soweitauf meinen Seiten personenbezogene Daten (beispielsweise Name,
+          Anschrift
+          oder E-Mail-Adressen)erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger
+          Basis.
+          Diese Daten werdenohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Ich
+          weise
+          darauf hin, dassdie Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail)
+          Sicherheitslücken
+          aufweisenkann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
+          möglich.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>Cookies</h2>
+
+        <p>
+          Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten
+          auf Ihrem Rechner keinenSchaden
+          an und enthalten keine Viren. Cookies dienen dazu, mein Angebot nutzerfreundlicher,
+          effektiverund
+          sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt
+          werdenund
+          die Ihr Browser speichert. Die meisten der von mir verwendeten Cookies sind so genannte
+          "Session-Cookies".Sie
+          werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem
+          Endgerätgespeichert,
+          bis Sie diese löschen. Diese Cookies ermöglichen es mir, Ihren Browser beim nächstenBesuch
+          wiederzuerkennen.
+          Sie können Ihren Browser so einstellen, dass Sie über das Setzen vonCookies informiert
+          werden
+          und Cookies nur im Einzelfall erlauben, die Annahme von Cookies fürbestimmte Fälle oder
+          generell
+          ausschließen sowie das automatische Löschen der Cookies beim Schließendes Browser
+          aktivieren.
+          Bei der Deaktivierung von Cookies kann die Funktionalität dieser Websiteeingeschränkt sein.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>Server-Log-Files</h2>
+
+        <p>
+          Der Provider der Seiten erhebt und speichert automatisch Informationen in so
+          genannten Server-Log-Files,
+          die Ihr Browser automatisch an mich übermittelt. Dies sind:
+
+          <br />- Browsertyp und Browserversion
+          <br />- verwendetes Betriebssystem
+          <br />- Referrer URL
+          <br />- Hostname des zugreifenden Rechners
+          <br />- Uhrzeit der Serveranfrage
+          <br />- IP-Adresse bei Zugriff
+
+          Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten
+          mit anderen Datenquellen wird nicht
+          vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete
+          Anhaltspunkte
+          für eine rechtswidrige Nutzung bekannt werden.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="footer x-bg-dark mt-4 py-3">
+    <div class="container">
+      <span class="text-muted"> &copy; 2010 -
+        <script>document.write(new Date().getFullYear())</script> by evil.baschdi</span>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="js/disclaimer.js"></script>
+</body>
+
 </html>
