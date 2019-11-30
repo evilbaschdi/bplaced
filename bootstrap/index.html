@@ -1,285 +1,181 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="font/font.css" rel="stylesheet" />
-
-  <title>evil.baschdi</title>
-
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+<!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sebastian Walter</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="mdb/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="mdb/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="mdb/css/style.css" rel="stylesheet">
+    <link href="mdb/stylesheet.css" rel="stylesheet">
+    <style>
+      section {
+        margin-top: 1rem !important;
+        margin-bottom: 3rem !important;
       }
-    }
-  </style>
-  <!-- Custom styles for this template -->
-  <link href="css\sticky-footer-navbar.css" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top x-bg-dark">
-      <a class="navbar-brand" href="#">evil.baschdi</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    </style>
+  </head>
+  
+  <body>
+  
+  
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+      <!--<a class="navbar-brand waves-effect" href="#" target="_blank">
+        <img src="https://images.unsplash.com/photo-1522139137660-4248e04955b8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjkyMzkxfQ" alt="Logo">
+      </a>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">            
-                <a href="javascript:myFunction();" class="nav-link">
-                  Disclaimer
-                  <i class="genericon genericon-summary"></i>
-                </a>
-              </li>
           <li class="nav-item">
-            <a href="https://evilbaschdi.github.io/" class="nav-link">
-              GitHub
-              <i class="genericon genericon-github"></i>
-            </a>
+            <a class="nav-link waves-effect" href="#" target="_blank">About us</a>
           </li>
           <li class="nav-item">
-            <a href="https://twitter.com/evilbaschdi" class="nav-link">
-              Twitter
-              <i class="genericon genericon-twitter"></i>
-            </a>
+            <a class="nav-link waves-effect" href="#" target="_blank">Pricing</a>
           </li>
           <li class="nav-item">
-            <a href="https://de.linkedin.com/pub/sebastian-walter/ba/351/987" class="nav-link">
-              LinkedIn
-              <i class="genericon genericon-linkedin"></i>
-            </a>
+            <a class="nav-link waves-effect" href="#" target="_blank">Team</a>
           </li>
           <li class="nav-item">
-            <a href="https://www.xing.com/profile/Sebastian_Walter26" class="nav-link">
-              Xing
-              <i class="jv-xing"></i>
-            </a>
+            <a class="nav-link waves-effect" href="#" target="_blank">Contact</a>
           </li>
-        
-        </ul>     
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+              <a href="https://evilbaschdi.github.io" class="nav-link waves-effect" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/evilbaschdi" class="nav-link waves-effect" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/sebastian-walter-987351ba" class="nav-link waves-effect" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>        
+          <!--<li class="nav-item">
+            <a href="#"
+              class="nav-link border border-light rounded waves-effect mr-2" target="_blank">
+              <i class="fas fa-envelope mr-1"></i>Newsletter
+            </a>
+          </li>-->
+        </ul>
       </div>
-    </nav>
-  </header>
-
-
-
-
-  <!-- Full Page Intro -->
-  <div class="view"
-    style="background-image: url('img/spectre_key_blue.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-      <!-- Content -->
-      <div class="text-center white-text mx-5 wow fadeIn">
-        <h1 class="mb-4">
-          <strong>Herzlich willkommen auf meiner Homepage</strong>
-        </h1>
-
-        <p class="mb-4 d-none d-md-block">
-          <strong>Beruflich betätige ich mich seit vielen Jahren als Software Developer für MS Dynamics.
-            <br />In meiner Freizeit höre und mache ich gerne Musik, Programmiere aber auch.</strong>
-        </p>
-
-        
-      </div>
-      <!-- Content -->
-
     </div>
-    <!-- Mask & flexbox options-->
-
-  </div>
-  <!-- Full Page Intro -->
-
-  <div class="container" id="disclaimer" style="display: none;">
-    <!-- Example row of columns -->
-    <div>
-      <h1>
-          <a href="javascript:myFunction();">
-              Disclaimer
-              <i class="genericon genericon-summary"></i>
-            </a>
-      </h1>
-    </div>
-    <div class="row">
-
-      <div class="col-md-4">
-        <h2>Haftung für Inhalte</h2>
-
-        <p>
-          Die Inhalte meiner Seiten wurden mit größter Sorgfalt erstellt. Für die
-          Richtigkeit, Vollständigkeit
-          und Aktualität der Inhaltekann ich jedoch keine Gewähr übernehmen. Als Diensteanbieter bin
-          ich
-          gemäß § 7 Abs.1 TMG füreigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
-          verantwortlich.
-          Nach §§ 8 bis10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte
-          oder
-          gespeichertefremde Informationen zu überwachen oder nach Umständen zu forschen, die auf
-          eine
-          rechtswidrigeTätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung
-          von
-          Informationennach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche
-          Haftung
-          ist jedocherst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei
-          Bekanntwerdenvon
-          entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.
-        </p>
+  </nav>
+  <div class="card card-intro elegant-color">
+    <div class="card-body white-text rgba-black-light text-center">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+          <p class="h5 mb-2">
+            Herzlich Willkommen
+          </p>
+          <p class="mb-0">auf meiner Homepage</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h2>Haftung für Links</h2>
-        <p>
-          Mein Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte
-          ich keinen Einfluss habe.
-          Deshalb kann ich fürdiese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
-          verlinkten
-          Seiten iststets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die
-          verlinkten
-          Seitenwurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
-          Rechtswidrige
-          Inhaltewaren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche
-          Kontrolle
-          derverlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht
-          zumutbar.Bei
-          Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h2>Urheberrecht</h2>
-
-        <p>
-          Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
-          unterliegen dem deutschen
-          Urheberrecht. DieVervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung
-          außerhalb
-          der Grenzendes Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors
-          bzw.
-          Erstellers.Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen
-          Gebrauch
-          gestattet.Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden
-          die
-          UrheberrechteDritter beachtet. Insbesondere werden Inhalte Dritter als solche
-          gekennzeichnet.
-          Sollten Sietrotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen
-          entsprechendenHinweis.
-          Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h2>Datenschutz</h2>
-
-        <p>
-          Der Betreiber dieser Seiten nimmt den Schutz Ihrer persönlichen Daten sehr
-          ernst. Ich behandele Ihre
-          personenbezogenen Datenvertraulich und entsprechend der gesetzlichen
-          Datenschutzvorschriften
-          sowie dieser Datenschutzerklärung.Die Nutzung meiner Website ist in der Regel ohne Angabe
-          personenbezogener
-          Daten möglich. Soweitauf meinen Seiten personenbezogene Daten (beispielsweise Name,
-          Anschrift
-          oder E-Mail-Adressen)erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger
-          Basis.
-          Diese Daten werdenohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Ich
-          weise
-          darauf hin, dassdie Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail)
-          Sicherheitslücken
-          aufweisenkann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
-          möglich.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h2>Cookies</h2>
-
-        <p>
-          Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten
-          auf Ihrem Rechner keinenSchaden
-          an und enthalten keine Viren. Cookies dienen dazu, mein Angebot nutzerfreundlicher,
-          effektiverund
-          sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt
-          werdenund
-          die Ihr Browser speichert. Die meisten der von mir verwendeten Cookies sind so genannte
-          "Session-Cookies".Sie
-          werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem
-          Endgerätgespeichert,
-          bis Sie diese löschen. Diese Cookies ermöglichen es mir, Ihren Browser beim nächstenBesuch
-          wiederzuerkennen.
-          Sie können Ihren Browser so einstellen, dass Sie über das Setzen vonCookies informiert
-          werden
-          und Cookies nur im Einzelfall erlauben, die Annahme von Cookies fürbestimmte Fälle oder
-          generell
-          ausschließen sowie das automatische Löschen der Cookies beim Schließendes Browser
-          aktivieren.
-          Bei der Deaktivierung von Cookies kann die Funktionalität dieser Websiteeingeschränkt sein.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h2>Server-Log-Files</h2>
-
-        <p>
-          Der Provider der Seiten erhebt und speichert automatisch Informationen in so
-          genannten Server-Log-Files,
-          die Ihr Browser automatisch an mich übermittelt. Dies sind:
-
-          <br />- Browsertyp und Browserversion
-          <br />- verwendetes Betriebssystem
-          <br />- Referrer URL
-          <br />- Hostname des zugreifenden Rechners
-          <br />- Uhrzeit der Serveranfrage
-          <br />- IP-Adresse bei Zugriff
-
-          Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten
-          mit anderen Datenquellen wird nicht
-          vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete
-          Anhaltspunkte
-          für eine rechtswidrige Nutzung bekannt werden.
-        </p>
-      </div>
-
     </div>
   </div>
-
-
-  <footer class="footer x-bg-dark mt-4 py-3">
-    <div class="container">
-      <span class="text-muted"> &copy; 2010 -
-        <script>document.write(new Date().getFullYear())</script> by evil.baschdi</span>
+</header>
+      
+  <main id="app" class="container my-5 py-5">
+    
+<section class="p-md-5 mx-md-5 text-center text-lg-left grey z-depth-1"
+  style="background-image: url(http://evilbaschdi.bplaced.net/img/me.jpg);">
+  <div class="row d-flex justify-content-center>
+    <div class="col-md-10">
+      <div class="card">
+        <div class="card-body m-3">
+          <div class="row">
+            <div class="col-lg-4 d-flex mb-2 align-items-center">
+              <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
+                <img src="http://evilbaschdi.bplaced.net/img/og_image.png" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <p class="text-muted font-weight-light mb-4">Ich bin Application Developer in der CRM Branche. Im privaten Umfeld entwickle ich gerne kleinere Anwendungen, hauptsächlich in WPF, die mir hier und da Arbeit abnehmen. Ansonsten höre und mache ich in meiner Freizeit gerne Musik, spiele Keyboard und lerne seit kurzem Gitarre.</p>
+              <br>
+              <p class="font-weight-bold lead mb-2">Sebastian Walter / evil.baschdi</p>
+              <p class="font-weight-bold text-muted mb-0">Application Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+  </div>
+</section>
+      
 
-  <script src="js/disclaimer.js"></script>
-</body>
+<section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+  <div class="row">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <div class="view overlay z-depth-1-half">
+        <img src="http://evilbaschdi.bplaced.net/img/early.jpg" class="img-fluid" alt="">
+        <a href="#">
+          <div class="mask rgba-white-light"></div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4 mb-md-0">
+      <h3 class="h3">Derzeitige private .net Projekte</h3>
+      <p class="text-muted">Der Großteil der Anwendungen ist dadurch entstanden, um mir privat oder beruflich das ein oder andere an Arbeit abzunehmen.
+Private entwickle ich hauptsächlich mithilfe der WPF (Windows Presentation Foundation).
+Als Programmiersprache verwende ich C#.
 
-</html>
+
+Eine detaillierte Auflistung aktueller Projekte findet sich auf der SourceCode Verwaltungsplattform GitHub.</p>
+      <a class="btn btn-elegant btn-md ml-0" href="https://evilbaschdi.github.io/" role="button">GitHub<i class="fab fa-github ml-1"></i></a>
+    </div>
+  </div>
+</section>
+      
+
+<section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+  <div class="row d-flex justify-content-center mb-4">
+    <div class="col-md-6 text-center">
+        <p class="font-weight-bold">Kontakt</p>
+        <p>Angaben gemäß § 5 TMG: Sebastian Walter Kindergartenstraße 1 92348 Berg E-Mail: sebwalter@gmx.net</p>
+        <!--
+          <a href="https://evilbaschdi.github.io" class="mx-1" role="button"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/evilbaschdi" class="mx-1" role="button"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/in/sebastian-walter-987351ba" class="mx-1" role="button"><i class="fab fa-linkedin-in"></i></a>
+        -->
+    </div>
+  </div>
+</section>
+      
+  </main>
+  
+<footer class="page-footer font-small elegant-color"> 
+  <div class="footer-copyright text-center py-3">© 2010 - 2019 Copyright:
+    <a > Sebastian Walter / evil.baschdi</a>
+  </div>
+</footer>
+      
+      
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="mdb/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="mdb/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="mdb/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="mdb/js/mdb.min.js"></script>
+    <script type="text/javascript" src="mdb/main.js"></script>
+  </body>
+  
+  </html>
