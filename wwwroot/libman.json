@@ -9,7 +9,7 @@
         },
         {
           "provider": "cdnjs",
-          "library": "jquery@3.5.0",
+          "library": "jquery@3.5.1",
           "destination": "lib/jquery/"
         }
       ]
