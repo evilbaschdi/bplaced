@@ -186,3 +186,6 @@ FakesAssemblies/
 Thumbs.db
 .vs/
 PrecompiledWeb/
+
+.fake
+.ionide
